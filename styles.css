@@ -49,6 +49,7 @@ header .donate-button {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    margin-right: 25px;
 }
 
 header .donate-button:hover {
@@ -424,6 +425,101 @@ header .donate-button:hover {
     background-color: #21867a;
 }
 
+/* Polls Section Styling */
+.polls-surveys-section {
+    margin-top: 10px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.polls-surveys-section:hover {
+    transform: translateY(-3px);
+}
+
+/* Poll Question */
+.polls-surveys-section h3 {
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.polls-surveys-section p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Radio Buttons */
+.poll-form label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.poll-form label:hover {
+    background: #f1f1f1;
+}
+
+/* Custom Radio Button */
+.poll-form input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #495867;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.poll-form input[type="radio"]:checked {
+    background: #495867;
+    border-color: #495867;
+}
+
+.poll-form input[type="radio"]:checked::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Vote Button */
+.vote-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #ff6600, #e76f51);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+    margin-top: 10px;
+}
+
+.vote-button:hover {
+    background: linear-gradient(135deg, #ff3300, #e76f51);
+    transform: scale(1.05);
+}
+
+
 /* Main Panel */
 .main-panel .post {
     margin-bottom: 20px;
@@ -465,6 +561,80 @@ header .donate-button:hover {
     background-color: #c65338;
 }
 
+/* Post Column Styling */
+.post-column {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Post Heading */
+.post-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e67342;
+    padding-bottom: 5px;
+}
+
+/* Individual Post Styling */
+.post {
+    background: #fafafa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Post Title */
+.post h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* Post Text */
+.post p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Post Image */
+.post img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Post Footer (Like & Comment Buttons) */
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Like and Comment Buttons */
+.like-button, .comment-button {
+    background: none;
+    border: none;
+    color: #e67342;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.like-button:hover, .comment-button:hover {
+    text-decoration: underline;
+}
+
 /* Right Panel */
 .right-panel ul {
     list-style: none;
@@ -497,9 +667,137 @@ header .donate-button:hover {
     background-color: #03564f;
 }
 
+/* Latest News Section */
+.latest-news {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.latest-news h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.news-img {
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+}
+
+.news-meta {
+    background: #1976d2;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.news-title {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 /* Section Styles */
 section {
     padding: 60px 20px;
+}
+
+/* Stories Hub Section */
+.stories-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.category-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Stories Container */
+.stories-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.story-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    padding: 15px;
+}
+
+.story-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.story-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.story-card p {
+    font-size: 14px;
+    color: #444;
+}
+
+.view-details {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-details:hover {
+    background-color: #333;
+}
+
+/* View More Button */
+.view-more {
+    display: block;
+    margin-left: auto;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-more:hover {
+    background-color: #333;
 }
 
 #about, #initiatives, #dialogue-forum, #stories-hub, #contact {
@@ -521,6 +819,74 @@ section p {
     color: #495867;
     line-height: 1.6;
 }
+
+.contact-section {
+    padding: 30px 20px;
+    border-radius: 10px;
+    max-width: 1100px;
+    margin: auto;
+    color: #FFE89E; /* Soft yellow text */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #184A45; /* Light yellowish-white */
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 15px;
+    color: #184A45; /* Soft yellow */
+    margin: 5px 0;
+}
+
+.social-links {
+    text-align: left;
+    min-width: 200px;
+}
+
+.social-links h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #184A45; /* White */
+    margin-bottom: 8px;
+}
+
+.icons {
+    display: flex;
+    gap: 8px;
+}
+
+.icons img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Reduce Extra Space */
+.contact-section p,
+.contact-section h2,
+.contact-section h3 {
+    line-height: 1.3; /* Makes text more compact */
+}
+
 
 /* Footer */
 footer {
